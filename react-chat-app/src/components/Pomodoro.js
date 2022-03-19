@@ -58,7 +58,7 @@ const Pomodoro = ({location}) => {
         } else {
             clearInterval(progress);
             progress = null;
-            progressStart = 0;
+            //progressStart = 0;
         }
     }
 
