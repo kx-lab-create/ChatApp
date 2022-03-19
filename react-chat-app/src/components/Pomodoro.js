@@ -16,7 +16,7 @@ const Pomodoro = ({location}) => {
     let progressStart = 0;
     //25 minutes is 1500 seconds
     let progressEnd = 1500;
-    let speed = 2000;
+    let speed = 1000;
     let secRem = 0;
     let minRem = 0;
 
