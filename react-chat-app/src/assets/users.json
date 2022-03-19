@@ -1,0 +1,21 @@
+
+[{
+    "Profile_photo": "img",
+    "Username": "user1",
+    "Password": "abc",
+    "Registration_date": "03/19/2022" ,
+    "Minutes studied": 23 ,
+    "Group_sessions_history": [] , 
+    "Friends": ["user2", "user3"]
+},
+
+{
+    "Profile_photo": "img",
+    "Username": "user2",
+    "Password": "abc",
+    "Registration_date": "03/19/2022" ,
+    "Minutes studied": 23 ,
+    "Group_sessions_history": [] , 
+    "Friends": ["user1", "user3"]
+}
+]
