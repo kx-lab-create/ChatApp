@@ -68,8 +68,11 @@ const Pomodoro = ({location}) => {
     // }, [location.search]);
 
     
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8bbbe3dc (Fixed bug for returning to front when timer is running)
 return (
     <div class="container">
         <div class = "timer-container">
@@ -85,6 +88,17 @@ return (
                 <span id = "setting"><i class = "fas fa-cog"></i></span>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+        <div class = "back-button">
+            <Link
+            onClick={(e) => {console.log('front'); clearInterval(progress); progress = null}}
+            to={`/front`}
+             >
+            <button type="submit">Back</button>
+            </Link>
+        </div> 
+>>>>>>> 8bbbe3dc (Fixed bug for returning to front when timer is running)
     </div>
 );
 }
