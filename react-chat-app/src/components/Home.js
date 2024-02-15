@@ -30,7 +30,14 @@ const Home = () => {
       >
         <button type="submit">Sign In</button>
       </Link>
+      <Link
+        onClick={(e) => (!name ? e.preventDefault() : null)}
+        to={`/pomodoro?name=${name}`}
+      >
+        <button type="submit">Pomodoro Study Session</button>
+      </Link>
     </div>
+
   );
 };
 
