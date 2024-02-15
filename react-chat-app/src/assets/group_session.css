@@ -1,0 +1,64 @@
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+.screen{
+    display: flex;
+    width: 100%;
+}
+.rightPanel{
+    width: 85vw;
+    float: right;
+}
+.leftPanel{
+    width: 15vw;
+    height: 100vh;
+    float: left;
+    background-color:#212836;
+    color: #ffffff;
+    padding-left: 15px;
+}
+.ChatScreen{
+    height: 70vh;
+    margin: 0 auto;
+    background-color: #B4BFC6;
+    padding: 20px;
+    overflow:auto;
+}
+.replyBox{
+    height: 30vh;
+}
+.textBox{
+    height: 18vh;
+    width: 84.5vw;
+
+}
+.submitBtn{
+    width: 85vw;
+    height:6vh;
+    background-color:#405e9b;
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+.submitBtn:hover{
+    background-color:#B4BFC6;
+}
+.leaveBtn{
+    position:absolute;
+    width: 13vw;
+    height:8vh;
+    align-items: center;
+    bottom:20px;
+    background-color:#e75936;
+    color:white;
+    border: none;
+    font-size: 2em;
+    
+    border-radius: 5px;
+}
+.leavenBtn:hover{
+    background-color:#b81e19;
+}
