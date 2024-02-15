@@ -1,6 +1,7 @@
 ## Instruction
 Setup the app
 - $ npm run setup
+
 Run the app
 - $ npm run dev
 
