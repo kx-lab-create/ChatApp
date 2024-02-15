@@ -10,8 +10,8 @@ const Pomodoro = ({location}) => {
     
     //no need for this; just 25 min for now
     const startStop = document.querySelector("#start-button");
-    let minute = document.querySelector("#minutes").innerHTML;
-    let second = document.querySelector("#seconds").innerHTML;
+    const minElem = document.querySelector("#minutes");
+    const secElem = document.querySelector("#seconds");
     let progress = null;
     let progressStart = 0;
     //25 minutes is 1500 seconds
@@ -20,14 +20,14 @@ const Pomodoro = ({location}) => {
     let secRem = 0;
     let minRem = 0;
 
-    startStop.onclick = function(){
-        if (startStop.innerHTML === "Start"){
-            if (!(parseInt(minute) === 0 && parseInt(second) === 0)){
-                startStop.innerHTML = "Stop";
+    function handleClick() {
+        if (document.querySelector("#start-button").innerHTML === "Start"){
+            if (!(parseInt(document.querySelector("#minutes").innerHTML) === 0 && parseInt(document.querySelector("#seconds").innerHTML) === 0)){
+                document.querySelector("#start-button").innerHTML = "Stop";
                 startStopProgress();
             }
         } else {
-            startStop.innerHTML = "Start";
+            document.querySelector("#start-button").innerHTML = "Start";
             startStopProgress();
         }
     }
@@ -37,10 +37,26 @@ const Pomodoro = ({location}) => {
 
         secRem = Math.floor((progressEnd - progressStart) % 60);
         minRem = Math.floor((progressEnd - progressStart) / 60);
+
+        document.querySelector("#seconds").innerHTML = secRem.toString().length == 2 ? secRem : `0${secRem}`;
+        document.querySelector("#minutes").innerHTML = minRem.toString().length == 2 ? minRem : `0${minRem}`;
+
+        if (progressStart == progressEnd) {
+            clearInterval(progress);
+            startStop.innerHTML = "START";
+            progress = null;
+            progressStart = 0;
+        }
     }
 
     function startStopProgress(){
-        
+        if (!progress){
+            progress = setInterval(progressTrack, speed);
+        } else {
+            clearInterval(progress);
+            progress = null;
+            progressStart = 0;
+        }
     }
 
 
@@ -56,11 +72,13 @@ return (
         <div class = "timer-container">
             <div class = "timer">
                 <div id = "time">
-                    <span id = "minutes">23</span>  
+                    <span id = "minutes">25</span>  
                     <span id = "colon">: </span>
-                    <span id = "seconds"> 12</span>      
+                    <span id = "seconds"> 00</span>      
                 </div>
-                <div id ="start-button">Start</div>
+                <div>
+                <button id = "start-button" onClick={handleClick}>Start</button>
+                </div>
                 <span id = "setting"><i class = "fas fa-cog"></i></span>
             </div>
         </div>
@@ -69,3 +87,5 @@ return (
 }
 
 export default Pomodoro;
+
+//<div id ="start-button">Start</div>
