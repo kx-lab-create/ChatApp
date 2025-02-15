@@ -1,0 +1,76 @@
+.welcome {
+position: absolute;
+width: 1131px;
+height: 209px;
+left: 45px;
+top: 65px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 122px;
+line-height: 169px;
+
+color: #000000;
+
+  }
+
+.login{
+position: absolute;
+width: 936px;
+height: 209px;
+left: 92px;
+top: 233px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 72px;
+line-height: 84px;
+
+color: #000000;
+}
+
+.inputbox{
+    position: absolute;
+    width: 916px;
+    height: 209px;
+    left: 92px;
+    top: 352px;
+}
+
+.username{
+    position: absolute;
+
+    left: 22px;
+    top: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: grey;
+}
+
+.password{
+    position: absolute;
+    left: 22px;
+    top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: grey;
+}
+
+.login-btn{
+    position: absolute;
+    left: 22px;
+    top: 90px; 
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 10px;
+    background-color: #D3D3D3;
+    border-radius: 30px;
+}
+
+.logo{
+    position: absolute;
+    left: 922px;
+    top: 190px; 
+}

@@ -1,0 +1,79 @@
+h1 {
+  position: absolute;
+  top: 50px;
+  left: 680px;
+}
+h2 {
+  position: absolute;
+  top: 110px;
+  left: 660px;
+}
+
+#account {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  
+#options{
+    position: fixed;     
+       text-align: center;    
+       bottom: 100px; 
+       width: 100%;
+}
+
+#option1{
+  position: absolute;
+    left: 322px;
+    bottom: 100px; 
+}
+
+  #main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+}
+
+.btn1{
+  position: absolute;
+  background-color: gray;
+  border-color: grey;
+  border-radius: 50px;
+  padding: 10px;
+  left: 522px;
+  bottom: 80px; 
+}
+
+.btn2{
+  position: absolute;
+  background-color: gray;
+  border-color: grey;
+  border-radius: 50px;
+  padding: 10px;
+  left: 680px;
+  bottom: 80px; 
+}
+
+.btn3{
+  position: absolute;
+  background-color: gray;
+  border-color: grey;
+  border-radius: 50px;
+  padding: 10px;
+  left: 922px;
+  bottom: 80px; 
+}
+
+.center{
+    position: absolute;
+    left: 522px;
+    top: 170px; 
+    
+}
