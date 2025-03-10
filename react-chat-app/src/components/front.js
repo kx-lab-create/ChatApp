@@ -15,7 +15,13 @@ const front = () => {
       <h2>
         Your Fish Tank
       </h2>
+      <Link
+      onClick={(e) => console.log('pomodoro')}
+      to={`/account`}
+      >
       <button id= 'account' type="submit">Account</button>
+      
+      </Link>
       
       <main>
       <img src="../fish_tank.png" alt="fishtank" width="500" height="500" className="center"></img>
